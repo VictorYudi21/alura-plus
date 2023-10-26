@@ -16,8 +16,9 @@
 body {
     background-color: var(--cor-de-fundo);
     color: var(--branco-principal);
-    font-family: var(--fonte-principal)
-
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
 }
 * {
     margin: 0;
@@ -28,11 +29,14 @@ body {
     background-image: url("imagens/Background.png");
     background-repeat: no-repeat;
     background-size: contain;
-    grid-template-columns: 50% 50%;
+    align-items: center;
+    text-align: center;
 }
 
 .conteiner {
     height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
 }
 
 .conteiner__botao {
@@ -42,9 +46,10 @@ body {
     color: var(--branco-principal);
     display: block;
     text-decoration: none;
+    margin-bottom: 1em;
 }
 
-.conteiner__botao__secundario {
+.botao__secundario {
     background-color: transparent;
     border: 2px solid var(--branco-principal);
 }
@@ -55,4 +60,11 @@ body {
 }
 .conteiner__titulo {
     font-size: 28px;
+    color: var(--cinza-secundario)
+}
+.conteiner__imagem {
+    margin: 1em 0 2em 0;
+}
+.conteiner__caixa {
+    margin: 0 6em;
 }
